@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8QB-JQ-2mm">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThemeCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8T-F9-IPq" customClass="PrimaryLabel" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="30" y="135" width="142.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6FB-nh-PrH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.094117647060000004" green="0.69411764710000001" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2et-Wt-sur" customClass="PrimaryTextButton" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="30" y="195" width="142.5" height="30"/>
+                                <state key="normal" title="Primary Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Theme0/borderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Primary Text Filed" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2G-RA-22F" customClass="PrimaryTextField" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="30" y="255" width="142.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TNd-5M-1fw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-sp-V3x">
+                                <rect key="frame" x="30" y="64" width="315" height="32"/>
+                                <segments>
+                                    <segment title="Theme 1"/>
+                                    <segment title="Theme 2"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HE6-Cm-bdu"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-BT-l6o" customClass="SecondaryLabel" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="135" width="142.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RhS-wR-x0U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.094117647060000004" green="0.69411764710000001" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loE-Og-wth" customClass="SecondaryTextButton" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="195" width="142.5" height="30"/>
+                                <state key="normal" title="Secondary Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Theme1/borderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Secondary Text Filed" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-2h-djh" customClass="SecondaryTextField" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="255" width="142.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5K9-9H-cxY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-Fs-sUk" customClass="SecondaryTextView" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="315" width="142.5" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Qqn-1J-oqo"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Theme1/borderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fEG-46-Afj" customClass="PrimaryTextView" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="30" y="315" width="142.5" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sM6-vw-ZvY"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Theme0/borderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-pk-jSm" customClass="ThemeLabel" customModule="ThemeCreator" customModuleProvider="target">
+                                <rect key="frame" x="148" y="461" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="loE-Og-wth" firstAttribute="width" secondItem="2et-Wt-sur" secondAttribute="width" id="37K-o1-Q5p"/>
+                            <constraint firstItem="MNY-BT-l6o" firstAttribute="leading" secondItem="Z8T-F9-IPq" secondAttribute="trailing" constant="30" id="3VG-Am-JXw"/>
+                            <constraint firstItem="fEG-46-Afj" firstAttribute="leading" secondItem="f2G-RA-22F" secondAttribute="leading" id="77w-St-EHI"/>
+                            <constraint firstItem="MNY-BT-l6o" firstAttribute="width" secondItem="Z8T-F9-IPq" secondAttribute="width" id="7Ad-J3-5aE"/>
+                            <constraint firstItem="fEG-46-Afj" firstAttribute="top" secondItem="f2G-RA-22F" secondAttribute="bottom" constant="30" id="BHJ-Yz-1FF"/>
+                            <constraint firstItem="MNY-BT-l6o" firstAttribute="centerY" secondItem="Z8T-F9-IPq" secondAttribute="centerY" id="DLv-zW-h3B"/>
+                            <constraint firstItem="Ybn-pk-jSm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="DeM-tb-3qC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kzC-sp-V3x" secondAttribute="trailing" constant="30" id="FRH-X3-A2m"/>
+                            <constraint firstItem="Z8T-F9-IPq" firstAttribute="top" secondItem="kzC-sp-V3x" secondAttribute="bottom" constant="40" id="J3W-h5-eg9"/>
+                            <constraint firstItem="ckx-2h-djh" firstAttribute="centerY" secondItem="f2G-RA-22F" secondAttribute="centerY" id="JAb-3f-ZML"/>
+                            <constraint firstItem="ckx-2h-djh" firstAttribute="width" secondItem="f2G-RA-22F" secondAttribute="width" id="JL3-bN-RWG"/>
+                            <constraint firstItem="MNY-BT-l6o" firstAttribute="trailing" secondItem="kzC-sp-V3x" secondAttribute="trailing" id="Kll-iD-TU9"/>
+                            <constraint firstItem="loE-Og-wth" firstAttribute="trailing" secondItem="MNY-BT-l6o" secondAttribute="trailing" id="P5u-XD-Kym"/>
+                            <constraint firstItem="kzC-sp-V3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PbT-g7-212"/>
+                            <constraint firstItem="f2G-RA-22F" firstAttribute="leading" secondItem="2et-Wt-sur" secondAttribute="leading" id="RBx-vO-WMa"/>
+                            <constraint firstItem="loE-Og-wth" firstAttribute="leading" secondItem="2et-Wt-sur" secondAttribute="trailing" constant="30" id="U4U-7L-lqI"/>
+                            <constraint firstItem="BVy-Fs-sUk" firstAttribute="width" secondItem="fEG-46-Afj" secondAttribute="width" id="XhK-6j-IHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ybn-pk-jSm" secondAttribute="trailing" constant="185" id="aJO-np-WMm"/>
+                            <constraint firstItem="ckx-2h-djh" firstAttribute="trailing" secondItem="loE-Og-wth" secondAttribute="trailing" id="bPV-EK-wqX"/>
+                            <constraint firstItem="Ybn-pk-jSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="417" id="d6u-E4-cTs"/>
+                            <constraint firstItem="2et-Wt-sur" firstAttribute="trailing" secondItem="Z8T-F9-IPq" secondAttribute="trailing" id="daj-ot-6rO"/>
+                            <constraint firstItem="2et-Wt-sur" firstAttribute="top" secondItem="Z8T-F9-IPq" secondAttribute="bottom" constant="30" id="fbi-Tw-Wey"/>
+                            <constraint firstItem="BVy-Fs-sUk" firstAttribute="trailing" secondItem="ckx-2h-djh" secondAttribute="trailing" id="gHE-gW-o3d"/>
+                            <constraint firstItem="loE-Og-wth" firstAttribute="centerY" secondItem="2et-Wt-sur" secondAttribute="centerY" id="gol-me-R4J"/>
+                            <constraint firstItem="ckx-2h-djh" firstAttribute="leading" secondItem="f2G-RA-22F" secondAttribute="trailing" constant="30" id="hiQ-8z-yro"/>
+                            <constraint firstItem="f2G-RA-22F" firstAttribute="top" secondItem="2et-Wt-sur" secondAttribute="bottom" constant="30" id="iXm-0W-ixV"/>
+                            <constraint firstItem="kzC-sp-V3x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oG5-KW-DLR"/>
+                            <constraint firstItem="fEG-46-Afj" firstAttribute="trailing" secondItem="f2G-RA-22F" secondAttribute="trailing" id="u5B-9h-uma"/>
+                            <constraint firstItem="2et-Wt-sur" firstAttribute="leading" secondItem="Z8T-F9-IPq" secondAttribute="leading" id="uPr-bL-JhQ"/>
+                            <constraint firstItem="BVy-Fs-sUk" firstAttribute="leading" secondItem="fEG-46-Afj" secondAttribute="trailing" constant="30" id="vDI-rh-enf"/>
+                            <constraint firstItem="Z8T-F9-IPq" firstAttribute="leading" secondItem="kzC-sp-V3x" secondAttribute="leading" id="w8u-xD-BNa"/>
+                            <constraint firstItem="BVy-Fs-sUk" firstAttribute="centerY" secondItem="fEG-46-Afj" secondAttribute="centerY" id="zU2-MS-Ytg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="41T-t9-YKg"/>
+                    <connections>
+                        <outlet property="segment" destination="kzC-sp-V3x" id="uOX-MD-oia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="89.505247376311857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K1o-4l-TbM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8QB-JQ-2mm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wPN-gP-NEo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Be3-1G-45b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idh-qI-kuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Theme0/borderColor">
+            <color red="0.013000000268220901" green="0.63599997758865356" blue="0.81699997186660767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Theme1/borderColor">
+            <color red="0.35199999809265137" green="0.31200000643730164" blue="0.38499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
